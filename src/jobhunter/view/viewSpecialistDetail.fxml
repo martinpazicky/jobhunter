@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="594.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jobhunter.controller.ViewSpecialistDetailController">
+   <children>
+      <Label fx:id="specialistName" alignment="CENTER" layoutX="310.0" layoutY="40.0" prefHeight="30.0" prefWidth="343.0" text="Name" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <VBox layoutX="201.0" layoutY="119.0" prefHeight="87.0" prefWidth="158.0">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="158.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="44.0" text="ID:" />
+                  <Label fx:id="specialistIdL" text="0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="158.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="45.0" text="Prax:" />
+                  <Label fx:id="specialistExperience" prefHeight="21.0" prefWidth="65.0" text="0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="571.0" layoutY="119.0" prefHeight="87.0" prefWidth="371.0">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="158.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="96.0" text="Dostupnosť:" />
+                  <Label fx:id="specialistAvailability" text="Áno" />
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="158.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="87.0" text="Vzdelanie:" />
+                  <Label fx:id="specialistEducation" prefHeight="21.0" prefWidth="129.0" text="FIIT STU" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ListView fx:id="specialistCertificates" layoutX="204.0" layoutY="400.0" prefHeight="126.0" prefWidth="556.0" />
+      <Label layoutX="449.0" layoutY="371.0" text="Certifikáty" />
+      <Label layoutX="192.0" layoutY="258.0" prefHeight="21.0" prefWidth="37.0" text="Typ:" />
+      <Label fx:id="specialistType" layoutX="229.0" layoutY="258.0" prefHeight="21.0" prefWidth="170.0" text="Bezpečnostný konzultant" />
+      <HBox fx:id="securityExtra" layoutX="571.0" layoutY="258.0" prefHeight="22.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="98.0" text="Auditor NBU:" />
+            <Label fx:id="isAuditor" text="Nie" />
+         </children>
+      </HBox>
+      <HBox fx:id="programmerExtra" layoutX="571.0" layoutY="258.0" prefHeight="22.0" prefWidth="296.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="114.0" text="Zaradenie/Typ:" />
+            <Label fx:id="programmerType" text="Nie" />
+         </children>
+      </HBox>
+      <VBox fx:id="adminExtra" layoutX="571.0" layoutY="261.0" prefHeight="72.0" prefWidth="263.0">
+         <children>
+            <HBox prefHeight="22.0" prefWidth="245.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="114.0" text="Zaradenie/Typ:" />
+                  <Label fx:id="adminType" text="Nie" />
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="245.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="153.0" text="Preferovaná platforma:" />
+                  <Label fx:id="adminPlatform" text="abcd" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

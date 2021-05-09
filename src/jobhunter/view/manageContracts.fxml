@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1181.0" stylesheets="@../resources/css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jobhunter.controller.ManageContractsController">
+   <children>
+      <GridPane prefHeight="700.0" prefWidth="1060.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="990.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="91.0" minHeight="0.0" prefHeight="70.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1000.0" minHeight="10.0" prefHeight="534.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="contractsTable" prefHeight="570.0" prefWidth="939.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="recruiterCol" prefWidth="467.0" text="Zamestnávateľ" />
+                  <TableColumn fx:id="createdAtCol" minWidth="0.0" prefWidth="583.0" text="Dátum vytvorenia" />
+              </columns>
+               <GridPane.margin>
+                  <Insets left="35.0" right="20.0" />
+               </GridPane.margin>
+            </TableView>
+            <Button mnemonicParsing="false" onAction="#handleBackButton" styleClass="back-button" stylesheets="@../resources/css/style.css" text="←">
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+            </Button>
+            <HBox prefHeight="80.0" prefWidth="1141.0" GridPane.rowIndex="2">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="560.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleCreateContractButton" text="Vytvoriť nový">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="iphone-blue" />
+                              <String fx:value="large-button" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="826.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleDeleteButton" text="Zmazať">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="iphone-blue" />
+                              <String fx:value="medium-button" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleViewButton" text="Zobraziť">
+                           <HBox.margin>
+                              <Insets right="35.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="iphone-blue" />
+                              <String fx:value="medium-button" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

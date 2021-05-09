@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jobhunter.controller.ViewContractDetailController">
+   <children>
+      <TableView fx:id="specialistsTable" layoutX="44.0" layoutY="116.0" prefHeight="252.0" prefWidth="710.0">
+        <columns>
+          <TableColumn fx:id="specialistTypeCol" prefWidth="75.0" text="Typ" />
+          <TableColumn fx:id="specialistNameCol" prefWidth="75.0" text="Meno" />
+        </columns>
+      </TableView>
+      <Label fx:id="contractDate" layoutX="569.0" layoutY="41.0" text="Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="recruiterName" layoutX="212.0" layoutY="41.0" text="RecName">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="41.0" text="Zamestnávateľ:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="471.0" layoutY="41.0" text="Vytvorené:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

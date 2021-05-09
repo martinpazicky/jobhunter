@@ -1,0 +1,116 @@
+AnchorPane {
+    -fx-background-image: url("/jobhunter/resources/imgs/background.png");
+}
+
+Label{
+    -fx-font-family: "Helvetica";
+}
+.list-label{
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header{
+    -fx-text-background-color: white;
+    -fx-background-color:
+            #a6b5c9,
+            linear-gradient(#303842 0%, #3e5577 20%, #375074 100%),
+            linear-gradient(#768aa5 0%, #849cbb 5%, #5877a2 50%, #486a9a 51%, #4a6c9b 100%);
+}
+.recruiter-table-col{
+    -fx-padding:  0 0 0 10px;
+    -fx-alignment:  CENTER-LEFT;
+}
+
+.small-button{
+    -fx-padding: 0 0 0 0 !important;
+    -fx-font-size: 15px !important;
+}
+
+.medium-button{
+    -fx-padding: 7 25 6 25 !important;
+    -fx-font-size: 16px !important;
+}
+
+.large-button{
+    -fx-padding: 10 35 10 35 !important;
+    -fx-font-size: 21px !important;
+}
+
+.iphone-blue {
+    -fx-background-color:
+            #a6b5c9,
+            linear-gradient(#303842 0%, #3e5577 20%, #375074 100%),
+            linear-gradient(#768aa5 0%, #849cbb 5%, #5877a2 50%, #486a9a 51%, #4a6c9b 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 7 30 7 30;
+    -fx-font-family: "Helvetica";
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+.iphone-blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , -1 );
+}
+
+.iphone-blue:hover {
+    -fx-scale-x: 1.015;
+    -fx-scale-y: 1.015;
+}
+
+.iphone-blue:pressed {
+    -fx-background-color: #2f537b;
+    -fx-scale-y: 0.96;
+    -fx-scale-x: 0.96;
+}
+
+.back-button {
+    -fx-background-color:
+            #a6b5c9,
+            linear-gradient(#303842 0%, #3e5577 20%, #375074 100%),
+            linear-gradient(#768aa5 0%, #849cbb 5%, #5877a2 50%, #486a9a 51%, #4a6c9b 100%);
+    -fx-background-radius: 100;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+.back-button:hover {
+    -fx-scale-x: 1.015;
+    -fx-scale-y: 1.015;
+}
+.back-button:pressed {
+    -fx-background-color: #2f537b;
+    -fx-scale-y: 0.96;
+    -fx-scale-x: 0.96;
+}
+
+.radio-button .radio {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #000;
+    -fx-background-color: white;
+    -fx-background-image: null;
+    -fx-border-radius: 10px;
+    -fx-padding: 2px;
+}
+.radio-button .radio:selected {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:armed {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:determinate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:indeterminate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button .dot {
+    -fx-background-radius: 15px;
+    -fx-padding: 8px;
+}
